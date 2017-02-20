@@ -1,0 +1,6 @@
+/*Template Script to manipulate activity of a robotics config
+
+Modification History
+Version 1.0  13-12-2016 JGill . As Per EKDMS 1255  */
+
+update dbo.dgms_robotic_config  set active = <TRUE_OR FALSE> where form_type = '<FORM_TYPE>'

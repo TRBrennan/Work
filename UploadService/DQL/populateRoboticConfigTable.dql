@@ -1,0 +1,4 @@
+INSERT INTO dm_dbo.dgms_robotic_config(form_type,form_format,form_source,robotic_category,robotic_endpoint,message_solution, message_workflow_id, response_timeout) VALUES('r39','xml','','Robotic Response pending for R39','','','','5');
+GO
+
+

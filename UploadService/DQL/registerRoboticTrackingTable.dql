@@ -1,0 +1,12 @@
+REGISTER TABLE dbo.dgms_robotic_tracking(identifier CHAR(64),creation_date DATE, r_object_id CHAR(16),robotic_form_type CHAR(60),robotic_category CHAR(64),real_category CHAR(64),status INT,error_condition CHAR(500),robotic_request_date DATE,robotic_call_retry_count INT,robot_response_date DATE,timeout_date DATE);
+GO
+update dm_registered object set world_table_permit = 15 where object_name = 'dgms_robotic_tracking';
+GO
+update dm_registered object set owner_table_permit = 15 where object_name = 'dgms_robotic_tracking';
+GO
+update dm_registered object set group_table_permit = 15 where object_name = 'dgms_robotic_tracking';
+GO
+
+
+
+

@@ -1,0 +1,14 @@
+
+#Unregister Table to add new Column---
+UNREGISTER TABLE dm_dbo.dgms_robotic_config;
+GO
+
+
+REGISTER TABLE dbo.dgms_robotic_config(form_type CHAR(60),form_format CHAR(4),form_source CHAR(10),robotic_category CHAR(64),robotic_endpoint CHAR(512), message_solution CHAR(100), message_workflow_id CHAR(100), response_timeout CHAR(10), robotic_retries INT, active BOOLEAN);
+GO
+update dm_registered object set world_table_permit = 15 where object_name = 'dgms_robotic_config';
+GO
+update dm_registered object set owner_table_permit = 15 where object_name = 'dgms_robotic_config';
+GO
+update dm_registered object set group_table_permit = 15 where object_name = 'dgms_robotic_config';
+GO

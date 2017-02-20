@@ -1,0 +1,7 @@
+e:
+cd E:\SVN_DMS\digital_mail_service\UploadService\Java\upload-service\lib
+mvn install:install-file -Dfile=commons-discovery-0.5.jar -DgroupId=com.commons.discovery -DartifactId=commons-discovery -Dversion=0.5 -Dpackaging=jar
+mvn install:install-file -Dfile=bpm_infra_da.jar -DgroupId=com.documentum.bpm -DartifactId=bpm_infra_da -Dversion=2.1 -Dpackaging=jar	
+mvn install:install-file -Dfile=wsdl4j.jar -DgroupId=com.wsdl4j -DartifactId=wsdl4j -Dversion=1 -Dpackaging=jar
+mvn install:install-file -Dfile=saaj.jar -DgroupId=com.saaj -DartifactId=saaj -Dversion=1 -Dpackaging=jar
+mvn deploy:deploy-file -Durl=file:./repo/ -Dfile=./lib/RoboticsSoapFramework-1.0.jar -DgroupId=hmrc.robotics -DartifactId=RoboticsSoapFramework -Dpackaging=jar -Dversion=1.0
