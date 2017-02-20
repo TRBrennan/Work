@@ -1,0 +1,750 @@
+# create work queue benefits and credits tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'benefits and credits tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping benefits and credits tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('CBO','benefits and credits','benefits and credits tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories benefits and credits tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('benefits and credits tracing','benefits and credits tracing', 1, 'dgms_dms_general', 0, 'CBO', 'Benefits and Credits', 0);
+#GO
+#=====================================
+# Update Skills benefits and credits tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='benefits and credits tracing', APPEND display_text='benefits and credits tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue benefits and credits tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'benefits and credits tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping benefits and credits tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('TCO','benefits and credits','benefits and credits tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories benefits and credits tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('benefits and credits tracing','benefits and credits tracing', 1, 'dgms_dms_general', 0, 'TCO', 'Benefits and Credits', 0);
+#GO
+#=====================================
+# Update Skills benefits and credits tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='benefits and credits tracing', APPEND display_text='benefits and credits tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue bt tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'bt tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping bt tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('CTIS','bt','bt tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories bt tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('bt tracing','bt tracing', 1, 'dgms_dms_general', 0, 'CTIS', 'BT', 0, 0);
+#GO
+#=====================================
+# Update Skills bt tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='bt tracing', APPEND display_text='bt tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue bt tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'bt tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping bt tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('CTO','bt','bt tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories bt tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('bt tracing','bt tracing', 1, 'dgms_dms_general', 0, 'CTO', 'BT', 0, 0);
+#GO
+#=====================================
+# Update Skills bt tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='bt tracing', APPEND display_text='bt tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue bt tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'bt tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping bt tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('CTS','bt','bt tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories bt tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('bt tracing','bt tracing', 1, 'dgms_dms_general', 0, 'CTS', 'BT', 0);
+#GO
+#=====================================
+# Update Skills bt tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='bt tracing', APPEND display_text='bt tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue bt tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'bt tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping bt tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('EAD','bt','bt tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories bt tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('bt tracing','bt tracing', 1, 'dgms_dms_general', 0, 'EAD', 'BT', 0, 0);
+#GO
+#=====================================
+# Update Skills bt tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='bt tracing', APPEND display_text='bt tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue bt tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'bt tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping bt tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('NCH','bt','bt tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories bt tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('bt tracing','bt tracing', 1, 'dgms_dms_general', 0, 'NCH', 'BT', 0);
+#GO
+#=====================================
+# Update Skills bt tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='bt tracing', APPEND display_text='bt tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue bt tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'bt tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping bt tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('NRU','bt','bt tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories bt tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('bt tracing','bt tracing', 1, 'dgms_dms_general', 0, 'NRU', 'BT', 0);
+#GO
+#=====================================
+# Update Skills bt tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='bt tracing', APPEND display_text='bt tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue bt tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'bt tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping bt tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('PTU','bt','bt tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories bt tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('bt tracing','bt tracing', 1, 'dgms_dms_general', 0, 'PTU', 'BT', 0);
+#GO
+#=====================================
+# Update Skills bt tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='bt tracing', APPEND display_text='bt tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue dmb tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'dmb tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping dmb tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('BankCT','dmb','dmb tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories dmb tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('dmb tracing','dmb tracing', 1, 'dgms_dms_general', 0, 'BankCT', 'DMB', 0');
+#GO
+#=====================================
+# Update Skills dmb tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='dmb tracing', APPEND display_text='dmb tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue dmb tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'dmb tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping dmb tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('BankEU','dmb','dmb tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories dmb tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('dmb tracing','dmb tracing', 1, 'dgms_dms_general', 0, 'BankEU', 'DMB', 0');
+#GO
+#=====================================
+# Update Skills dmb tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='dmb tracing', APPEND display_text='dmb tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue dmb tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'dmb tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping dmb tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('BankGPT','dmb','dmb tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories dmb tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('dmb tracing','dmb tracing', 1, 'dgms_dms_general', 0, 'BankGPT', 'DMB', 0');
+#GO
+#=====================================
+# Update Skills dmb tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='dmb tracing', APPEND display_text='dmb tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue dmb tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'dmb tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping dmb tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('BankSA','dmb','dmb tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories dmb tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('dmb tracing','dmb tracing', 1, 'dgms_dms_general', 0, 'BankSA', 'DMB', 0');
+#GO
+#=====================================
+# Update Skills dmb tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='dmb tracing', APPEND display_text='dmb tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue dmb tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'dmb tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping dmb tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('CT','dmb','dmb tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories dmb tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('dmb tracing','dmb tracing', 1, 'dgms_dms_general', 0, 'CT', 'DMB', 0');
+#GO
+#=====================================
+# Update Skills dmb tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='dmb tracing', APPEND display_text='dmb tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue dmb tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'dmb tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping dmb tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('PAYE','dmb','dmb tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories dmb tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('dmb tracing','dmb tracing', 1, 'dgms_dms_general', 0, 'PAYE', 'DMB', 0');
+#GO
+#=====================================
+# Update Skills dmb tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='dmb tracing', APPEND display_text='dmb tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue dmb tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'dmb tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping dmb tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('SA','dmb','dmb tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories dmb tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('dmb tracing','dmb tracing', 1, 'dgms_dms_general', 0, 'SA', 'DMB', 0');
+#GO
+#=====================================
+# Update Skills dmb tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='dmb tracing', APPEND display_text='dmb tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue dmb tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'dmb tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping dmb tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('TC','dmb','dmb tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories dmb tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('dmb tracing','dmb tracing', 1, 'dgms_dms_general', 0, 'TC', 'DMB', 0');
+#GO
+#=====================================
+# Update Skills dmb tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='dmb tracing', APPEND display_text='dmb tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue dmb tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'dmb tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping dmb tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('VAT','dmb','dmb tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories dmb tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('dmb tracing','dmb tracing', 1, 'dgms_dms_general', 0, 'VAT', 'DMB', 0');
+#GO
+#=====================================
+# Update Skills dmb tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='dmb tracing', APPEND display_text='dmb tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue pt operations tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'pt operations tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping pt operations tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('PSA','pt operations','pt operations tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories pt operations tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('pt operations tracing','pt operations tracing', 1, 'dgms_dms_general', 0, 'PSA', 'PT Operations', 0);
+#GO
+#=====================================
+# Update Skills pt operations tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='pt operations tracing', APPEND display_text='pt operations tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue pt operations tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'pt operations tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping pt operations tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('NICEO','pt operations','pt operations tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories pt operations tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('pt operations tracing','pt operations tracing', 1, 'dgms_dms_general', 0, 'NICEO', 'PT Operations', 0);
+#GO
+#=====================================
+# Update Skills pt operations tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='pt operations tracing', APPEND display_text='pt operations tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue spt tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'spt tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping spt tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('CSI','spt','spt tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories spt tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('spt tracing','spt tracing', 1, 'dgms_dms_general', 0, 'CSI', 'SPT', 0);
+#GO
+#=====================================
+# Update Skills spt tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='spt tracing', APPEND display_text='spt tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue spt tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'spt tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping spt tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('ITTP','spt','spt tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories spt tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('spt tracing','spt tracing', 1, 'dgms_dms_general', 0, 'ITTP', 'SPT', 0);
+#GO
+#=====================================
+# Update Skills spt tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='spt tracing', APPEND display_text='spt tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue spt tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'spt tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping spt tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('SAV','spt','spt tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories spt tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('spt tracing','spt tracing', 1, 'dgms_dms_general', 0, 'SAV', 'SPT', 0);
+#GO
+#=====================================
+# Update Skills spt tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='spt tracing', APPEND display_text='spt tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue wlu tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'wlu tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping wlu tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('WCC','wlu','wlu tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories wlu tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('wlu tracing','wlu tracing', 1, 'dgms_dms_general', 0, 'WCC', 'WLU', 0);
+#GO
+#=====================================
+# Update Skills wlu tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='wlu tracing', APPEND display_text='wlu tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue ec tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'ec tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping ec tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('CCO','ec','ec tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories ec tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('ec tracing','ec tracing', 1, 'dgms_dms_general', 0, 'CCO', 'EC', 0);
+#GO
+#=====================================
+# Update Skills ec tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='ec tracing', APPEND display_text='ec tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue wmbc tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'wmbc tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping wmbc tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('RandDAA','wmbc','wmbc tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories wmbc tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('wmbc tracing','wmbc tracing', 1, 'dgms_dms_general', 0, 'RandDAA', 'WMBC', 0);
+#GO
+#=====================================
+# Update Skills wmbc tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='wmbc tracing', APPEND display_text='wmbc tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue wmbc tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'wmbc tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping wmbc tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('HNWU','wmbc','wmbc tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories wmbc tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('wmbc tracing','wmbc tracing', 1, 'dgms_dms_general', 0, 'HNWU', 'WMBC', 0);
+#GO
+#=====================================
+# Update Skills wmbc tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='wmbc tracing', APPEND display_text='wmbc tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue financeopscorpt tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'financeopscorpt tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping financeopscorpt tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('TRPO1','financeopscorpt','financeopscorpt tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories financeopscorpt tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('financeopscorpt tracing','financeopscorpt tracing', 1, 'dgms_dms_general', 0, 'TRPO1', 'FinanceOpsCorpT', 0);
+#GO
+#=====================================
+# Update Skills financeopscorpt tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='financeopscorpt tracing', APPEND display_text='financeopscorpt tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue isbc tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'isbc tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping isbc tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('CITEX','isbc','isbc tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories isbc tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('isbc tracing','isbc tracing', 1, 'dgms_dms_general', 0, 'CITEX', 'ISBC', 0);
+#GO
+#=====================================
+# Update Skills isbc tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='isbc tracing', APPEND display_text='isbc tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+# create work queue ca tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'ca tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# TYracing Queue
+# insert BA mapping ca tracing
+
+#INSERT INTO dm_dbo.dgms_ba_mapping VALUES ('AAG','ca','ca tracing');
+#GO
+#=====================================
+# Non-Secure queue
+# insert into categories ca tracing
+
+#INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('ca tracing','ca tracing', 1, 'dgms_dms_general', 0, 'AAG', 'CA', 0);
+#GO
+#=====================================
+# Update Skills ca tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='ca tracing', APPEND display_text='ca tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================

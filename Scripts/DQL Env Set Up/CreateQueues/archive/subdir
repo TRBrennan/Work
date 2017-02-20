@@ -1,0 +1,45 @@
+# create work queue cm-secure queue15
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'cm-secure queue15',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+#=====================================
+# Secure queue
+# insert into categories cm-secure queue15
+
+INSERT INTO dm_dbo.dgms_categories_lookup VALUES ('CM-SECURE QUEUE15','cm-secure queue15', 1, 'dgms_cm-secure_queue15', 1, 'CSIDH', 'DMS');
+GO
+#=====================================
+# Update Skills cm-secure queue15
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='cm-secure queue15', APPEND display_text='CM-SECURE QUEUE15' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
+create dm_group object
+set group_name='dgms_cm-secure_queue15',
+set group_display_name='dgms_cm-secure_queue15 ',
+set description ='CM-SECURE QUEUE15 Viewers group ',
+set group_admin='dgms_cm-secure_queue15',
+set owner_name='dmadmin',
+set group_class = 'group';
+GO
+#=====================================
+create dm_group object
+set group_name='dgms_cm-secure_queue15_proc',
+set group_display_name='dgms_cm-secure_queue15_proc ',
+set description ='CM-SECURE QUEUE15 Processors group ',
+set group_admin='dgms_cm-secure_queue15_proc',
+set owner_name='dmadmin',
+set group_class = 'group';
+GO
+#=====================================
+# insert into dgms_secure_q_admin table cm-secure queue15
+INSERT INTO dm_dbo.dgms_secure_q_admin (queue_name, queue_admin_username) VALUES ('cm-secure queue15', '0610001');
+GO
+#=====================================
+#DQL: Add pid to the queue group cm-secure queue15
+ALTER Group 'cm-secure queue15' ADD (select user_name from dm_user where user_name = '0610001');
+GO
+#=====================================

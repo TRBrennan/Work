@@ -1,0 +1,45 @@
+# create work queue tracing For Category tracing
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'tracing',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+
+# create work queue technical band o For Category technical band o
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'technical band o',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+
+#=====================================
+# create work queue technical tsi For Category technical tsi
+
+CREATE dmc_workqueue OBJECT 
+SET wq_name = 'technical tsi',
+SET wq_policy_id = (SELECT r_object_id FROM dmc_workqueue_policy WHERE policy_name = 'HMRCDMS Items' AND policy_type = 0), 
+SET wq_category_id = (SELECT r_object_id FROM dmc_workqueue_category WHERE object_name = 'HMRCDMS');
+GO
+
+
+#=====================================
+# Update Skills technical tsi
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='technical tsi', APPEND display_text='technical tsi' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+
+
+#=====================================
+# Update Skills technical band o
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='technical band o', APPEND display_text='technical band o' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+
+#=====================================
+# Update Skills tracing
+
+UPDATE dmc_wq_skill_info OBJECT APPEND valid_values_string='tracing', APPEND display_text='tracing' WHERE r_object_id = (SELECT r_object_id FROM dmc_wq_skill_info WHERE skill_name='dgms_filter');
+GO
+#=====================================
