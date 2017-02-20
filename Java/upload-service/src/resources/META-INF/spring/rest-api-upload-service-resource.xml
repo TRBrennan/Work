@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ Copyright (c) 2016. EMC Coporation. All Rights Reserved.
+  -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:lang="http://www.springframework.org/schema/lang"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/lang
+		http://www.springframework.org/schema/lang/spring-lang.xsd">
+	<bean id="UploadServiceManager" class="uk.gov.gsi.hmrc.rest.dms.persistent.impl.UploadServiceManagerImpl"/>
+	<context:component-scan base-package="uk.gov.gsi.hmrc.rest.dms.controller"
+                            use-default-filters="false">
+        <context:include-filter type="regex" expression=".*controller.*Controller"/>
+        <context:exclude-filter type="custom" expression="com.emc.documentum.rest.context.ResourceExcludeFilter"/>        
+	</context:component-scan>
+	
+</beans>
