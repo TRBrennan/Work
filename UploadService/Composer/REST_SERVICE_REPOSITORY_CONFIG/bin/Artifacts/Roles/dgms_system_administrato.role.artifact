@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Artifact:Artifact xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Artifact="http://documentum.emc.com/infrastructure/12012007/artifact" xmlns:group="http://documentum.emc.com/artifact/12012007/group" urn="urnd:com.emc.ide.artifact.role/dgms_system_administrato?name=dgms_system_administrato" categoryId="com.emc.ide.artifact.role" implicitlyCreated="true">
+  <dataModel xsi:type="group:Role" groupName="dgms_system_administrato" groupAddress="" description="" groupClass="role" groupDisplayName="dgms_system_administrato">
+    <objectType href="urnd:com.emc.ide.artifact.dclass/dm_group?name=dm_group#//@dataModel"/>
+  </dataModel>
+  <viewModel xsi:type="Artifact:DefaultArtifactViewModel"/>
+</Artifact:Artifact>

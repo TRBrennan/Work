@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<installparam:InputFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:installparam="installparam">
+  <parameter key="dgms_business_manager" value="" defaultValue="dgms_business_manager"/>
+  <parameter key="dgms_directorate" value="" defaultValue="dgms_directorate"/>
+  <parameter key="DMS" value="" defaultValue="DMS"/>
+  <parameter key="Dar Install Folder" value="" defaultValue="/System/Applications/REST_SERVICE_REPOSITORY_CONFIG"/>
+  <parameter key="dgms_manager" value="" defaultValue="dgms_manager"/>
+  <parameter key="dgms_delivery_manager" value="" defaultValue="dgms_delivery_manager"/>
+  <parameter key="dgms_dms_general" value="" defaultValue="dgms_dms_general"/>
+  <parameter key="cps_all" value="" defaultValue="cps_all"/>
+  <parameter key="dgms_system_administrato" value="" defaultValue="dgms_system_administrato"/>
+  <parameter key="dgms_processor" value="" defaultValue="dgms_processor"/>
+  <parameter key="dgms_technical" value="" defaultValue="dgms_technical"/>
+  <parameter key="filestore_01" value="" defaultValue="filestore_01"/>
+</installparam:InputFile>

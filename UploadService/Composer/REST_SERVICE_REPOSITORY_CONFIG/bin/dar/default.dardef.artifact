@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Artifact:Artifact xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Artifact="http://documentum.emc.com/infrastructure/12012007/artifact" xmlns:acl="http://documentum.emc.com/artifact/12012007/acl" xmlns:dardef="http://documentum.emc.com/infrastructure/12012007/dardef" xmlns:dclass="http://documentum.emc.com/artifact/12012007/dclass" xmlns:group="http://documentum.emc.com/artifact/12012007/group" xmlns:installparameter="installparameter" xmlns:sysobject="http://documentum.emc.com/artifact/12012007/sysobject" urn="urnd:com.emc.ide.artifact.dardef/default?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/dar/default.dardef" categoryId="com.emc.ide.artifact.dardef">
+  <dataModel xsi:type="dardef:DarDef" objectName="REST_SERVICE_REPOSITORY_CONFIG" contentType="jar" sourceDir="bin" name="REST_SERVICE_REPOSITORY_CONFIG">
+    <objectType href="urnd:com.emc.ide.artifact.dclass/dmc_dar?artifactURI=platform:/resource/DFS2/inst/dclass/dmc_dar.type#//@dataModel"/>
+    <version/>
+    <artifacts xsi:type="sysobject:SysobjectSubtype" href="urnd:com.emc.ide.artifact.sysobjectsubtype/xml_attribute_matching.xml?language_code=&amp;location=%2FDFS%2Fconfig&amp;name=xml_attribute_matching.xml&amp;type=dm_document#//@dataModel"/>
+    <artifacts xsi:type="group:Role" href="urnd:com.emc.ide.artifact.role/dgms_technical?name=dgms_technical#//@dataModel"/>
+    <artifacts xsi:type="group:Role" href="urnd:com.emc.ide.artifact.role/dgms_system_administrato?name=dgms_system_administrato#//@dataModel"/>
+    <artifacts xsi:type="group:Role" href="urnd:com.emc.ide.artifact.role/dgms_processor?name=dgms_processor#//@dataModel"/>
+    <artifacts xsi:type="group:Role" href="urnd:com.emc.ide.artifact.role/dgms_manager?name=dgms_manager#//@dataModel"/>
+    <artifacts xsi:type="group:Role" href="urnd:com.emc.ide.artifact.role/dgms_directorate?name=dgms_directorate#//@dataModel"/>
+    <artifacts xsi:type="group:Role" href="urnd:com.emc.ide.artifact.role/dgms_delivery_manager?name=dgms_delivery_manager#//@dataModel"/>
+    <artifacts xsi:type="group:Role" href="urnd:com.emc.ide.artifact.role/dgms_business_manager?name=dgms_business_manager#//@dataModel"/>
+    <artifacts xsi:type="acl:Acl" href="urnd:com.emc.ide.artifact.acl/dgms_dms_general?name=dgms_dms_general#//@dataModel"/>
+    <artifacts xsi:type="installparameter:UserParameter" href="urnd:com.emc.ide.userparameter/DMS?name=DMS#//@dataModel"/>
+    <artifacts xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/dgms_technical?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_technical.parameter#//@dataModel"/>
+    <artifacts xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/dgms_system_administrato?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_system_administrato.parameter#//@dataModel"/>
+    <artifacts xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/dgms_processor?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_processor.parameter#//@dataModel"/>
+    <artifacts xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/dgms_manager?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_manager.parameter#//@dataModel"/>
+    <artifacts xsi:type="installparameter:ACLParameter" href="urnd:com.emc.ide.aclparameter/dgms_dms_general?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_dms_general.parameter#//@dataModel"/>
+    <artifacts xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/dgms_directorate?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_directorate.parameter#//@dataModel"/>
+    <artifacts xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/dgms_delivery_manager?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_delivery_manager.parameter#//@dataModel"/>
+    <artifacts xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/dgms_business_manager?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_business_manager.parameter#//@dataModel"/>
+    <artifacts xsi:type="installparameter:FolderParameter" href="urnd:com.emc.ide.folderparameter/Dar+Install+Folder?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/darinstallfolder.parameter#//@dataModel"/>
+    <artifacts xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/cps_all?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/cps_all.parameter#//@dataModel"/>
+    <artifacts xsi:type="group:Group" href="urnd:com.emc.ide.artifact.group/dgms_group_changer?name=dgms_group_changer#//@dataModel"/>
+    <artifacts xsi:type="group:Group" href="urnd:com.emc.ide.artifact.group/cps_all?name=cps_all#//@dataModel"/>
+    <artifacts xsi:type="sysobject:FolderSubtype" href="urnd:com.emc.ide.artifact.foldersubtype/DFS?language_code=&amp;name=DFS&amp;type=dm_cabinet#//@dataModel"/>
+    <artifacts xsi:type="sysobject:FolderSubtype" href="urnd:com.emc.ide.artifact.foldersubtype/config?language_code=&amp;location=%2FDFS&amp;name=config&amp;type=dm_folder#//@dataModel"/>
+    <artifacts xsi:type="dclass:DClass" href="urnd:com.emc.ide.artifact.dclass/dmc_dar?artifactURI=platform:/resource/DFS2/inst/dclass/dmc_dar.type#//@dataModel"/>
+    <artifacts xsi:type="dardef:DarDef" href="urnd:com.emc.ide.artifact.dardef/default?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/dar/default.dardef#//@dataModel"/>
+    <installOptions>
+      <key xsi:type="group:Role" href="urnd:com.emc.ide.artifact.role/dgms_business_manager?name=dgms_business_manager#//@dataModel"/>
+      <value>
+        <upgradeOption xsi:type="dardef:UpgradeOption" optionValue="IGNORE"/>
+      </value>
+    </installOptions>
+    <installOptions>
+      <key xsi:type="group:Role" href="urnd:com.emc.ide.artifact.role/dgms_directorate?name=dgms_directorate#//@dataModel"/>
+      <value>
+        <upgradeOption xsi:type="dardef:UpgradeOption" optionValue="IGNORE"/>
+      </value>
+    </installOptions>
+    <installOptions>
+      <key xsi:type="group:Role" href="urnd:com.emc.ide.artifact.role/dgms_manager?name=dgms_manager#//@dataModel"/>
+      <value>
+        <upgradeOption xsi:type="dardef:UpgradeOption" optionValue="IGNORE"/>
+      </value>
+    </installOptions>
+    <installOptions>
+      <key xsi:type="group:Role" href="urnd:com.emc.ide.artifact.role/dgms_delivery_manager?name=dgms_delivery_manager#//@dataModel"/>
+      <value>
+        <upgradeOption xsi:type="dardef:UpgradeOption" optionValue="IGNORE"/>
+      </value>
+    </installOptions>
+    <installOptions>
+      <key xsi:type="sysobject:FolderSubtype" href="urnd:com.emc.ide.artifact.foldersubtype/DFS?language_code=&amp;name=DFS&amp;type=dm_cabinet#//@dataModel"/>
+      <value>
+        <owner xsi:type="installparameter:UserParameter" href="urnd:com.emc.ide.userparameter/DMS?name=DMS#//@dataModel"/>
+        <security xsi:type="installparameter:ACLParameter" href="urnd:com.emc.ide.aclparameter/dgms_dms_general?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_dms_general.parameter#//@dataModel"/>
+        <upgradeOption xsi:type="dardef:UpgradeOption" optionValue="IGNORE"/>
+      </value>
+    </installOptions>
+    <installOptions>
+      <key xsi:type="sysobject:SysobjectSubtype" href="urnd:com.emc.ide.artifact.sysobjectsubtype/xml_attribute_matching.xml?language_code=&amp;location=%2FDFS%2Fconfig&amp;name=xml_attribute_matching.xml&amp;type=dm_document#//@dataModel"/>
+      <value>
+        <owner xsi:type="installparameter:UserParameter" href="urnd:com.emc.ide.userparameter/DMS?name=DMS#//@dataModel"/>
+        <security xsi:type="installparameter:ACLParameter" href="urnd:com.emc.ide.aclparameter/dgms_dms_general?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_dms_general.parameter#//@dataModel"/>
+        <upgradeOption xsi:type="dardef:UpgradeOption" optionValue="IGNORE"/>
+      </value>
+    </installOptions>
+    <installOptions>
+      <key xsi:type="acl:Acl" href="urnd:com.emc.ide.artifact.acl/dgms_dms_general?name=dgms_dms_general#//@dataModel"/>
+      <value>
+        <upgradeOption xsi:type="dardef:UpgradeOption" optionValue="IGNORE"/>
+      </value>
+    </installOptions>
+    <installOptions>
+      <key xsi:type="sysobject:FolderSubtype" href="urnd:com.emc.ide.artifact.foldersubtype/config?language_code=&amp;location=%2FDFS&amp;name=config&amp;type=dm_folder#//@dataModel"/>
+      <value>
+        <owner xsi:type="installparameter:UserParameter" href="urnd:com.emc.ide.userparameter/DMS?name=DMS#//@dataModel"/>
+        <security xsi:type="installparameter:ACLParameter" href="urnd:com.emc.ide.aclparameter/dgms_dms_general?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_dms_general.parameter#//@dataModel"/>
+        <upgradeOption xsi:type="dardef:UpgradeOption" optionValue="IGNORE"/>
+      </value>
+    </installOptions>
+    <installOptions>
+      <key xsi:type="group:Role" href="urnd:com.emc.ide.artifact.role/dgms_system_administrato?name=dgms_system_administrato#//@dataModel"/>
+      <value>
+        <upgradeOption xsi:type="dardef:UpgradeOption" optionValue="IGNORE"/>
+      </value>
+    </installOptions>
+    <installOptions key="//@dataModel">
+      <value>
+        <location xsi:type="installparameter:FolderParameter" href="urnd:com.emc.ide.folderparameter/Dar+Install+Folder?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/darinstallfolder.parameter#//@dataModel"/>
+        <upgradeOption xsi:type="dardef:UpgradeOption" optionValue="VERSION"/>
+      </value>
+    </installOptions>
+    <installOptions>
+      <key xsi:type="group:Group" href="urnd:com.emc.ide.artifact.group/cps_all?name=cps_all#//@dataModel"/>
+      <value>
+        <upgradeOption xsi:type="dardef:UpgradeOption" optionValue="IGNORE"/>
+      </value>
+    </installOptions>
+    <installOptions>
+      <key xsi:type="group:Role" href="urnd:com.emc.ide.artifact.role/dgms_technical?name=dgms_technical#//@dataModel"/>
+      <value>
+        <upgradeOption xsi:type="dardef:UpgradeOption" optionValue="IGNORE"/>
+      </value>
+    </installOptions>
+    <installOptions>
+      <key xsi:type="group:Role" href="urnd:com.emc.ide.artifact.role/dgms_processor?name=dgms_processor#//@dataModel"/>
+      <value>
+        <upgradeOption xsi:type="dardef:UpgradeOption" optionValue="IGNORE"/>
+      </value>
+    </installOptions>
+    <darInstallOptionsSet>
+      <location xsi:type="installparameter:FolderParameter" href="urnd:com.emc.ide.folderparameter/Dar+Install+Folder?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/darinstallfolder.parameter#//@dataModel"/>
+      <upgradeOption xsi:type="dardef:UpgradeOption"/>
+    </darInstallOptionsSet>
+  </dataModel>
+</Artifact:Artifact>

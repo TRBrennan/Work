@@ -1,0 +1,127 @@
+<dfs_configs xmlns="http://govtalk.gov.uk/hmrc/bit/config/1">
+	<dfs_config>
+		<import_rules>
+ 			<target_acl>dgms_dms_general</target_acl>
+		    <target_acl_domain>dm_dbo</target_acl_domain>
+		    <target_folder>DMS/Attachments/</target_folder>
+        	<target_type>dgms_mail_item</target_type>
+			<target_attachment_type>dgms_submissions</target_attachment_type>
+			<target_attachment_folder_type>dgms_submissions_folder</target_attachment_folder_type>
+			<target_mailitem_folder_attr_json>dfs_submission_reference</target_mailitem_folder_attr_json>
+
+		    <meta_data_mappings>
+					<meta_data>
+						<meta_data_name>hmrc_time_of_receipt</meta_data_name>
+		    			<attribute_name>received_date</attribute_name>
+						<attribute_type>Time</attribute_type>
+						<attribute_date_format>dd/MM/yyyy</attribute_date_format>
+					</meta_data>
+					<meta_data>
+						<meta_data_name>time_xml_created</meta_data_name>
+		    			<attribute_name>scanned_date</attribute_name>
+						<attribute_type>Time</attribute_type>
+						<attribute_date_format>dd/MM/yyyy</attribute_date_format>
+					</meta_data>
+					<meta_data>
+						<meta_data_name>submission_reference</meta_data_name>
+		    			<attribute_name>dfs_submission_reference</attribute_name>
+						<attribute_type>String</attribute_type>
+					</meta_data>
+					<meta_data>
+						<meta_data_name>form_id</meta_data_name>
+		    			<attribute_name>form_id</attribute_name>
+						<attribute_type>String</attribute_type>
+					</meta_data>
+					<meta_data>
+						<meta_data_name>number_pages</meta_data_name>
+		    			<attribute_name>number_pages</attribute_name>
+						<attribute_type>Integer</attribute_type>
+					</meta_data>
+					<meta_data>
+						<meta_data_name>source</meta_data_name>
+		    			<attribute_name>source</attribute_name>
+						<attribute_type>String</attribute_type>
+					</meta_data>
+					<meta_data>
+						<meta_data_name>customer_id</meta_data_name>
+		    			<attribute_name>identification</attribute_name>
+						<attribute_type>String</attribute_type>
+					</meta_data>
+					<meta_data>
+						<meta_data_name>submission_mark</meta_data_name>
+		    			<attribute_name>dfs_submission_mark</attribute_name>
+						<attribute_type>String</attribute_type>
+					</meta_data>
+					<meta_data>
+						<meta_data_name>cas_key</meta_data_name>
+		    			<attribute_name>cas_key</attribute_name>
+						<attribute_type>String</attribute_type>
+					</meta_data>
+					<meta_data>
+						<meta_data_name>classification_type</meta_data_name>
+						<attribute_name>category</attribute_name>
+						<attribute_type>String</attribute_type>
+					</meta_data>
+					<meta_data>
+						<meta_data_name>business_area</meta_data_name>
+						<attribute_name>business_area</attribute_name><!-- Determined by the Category in runtime regardless of what is sent in this tag. -->
+						<attribute_type>String</attribute_type>
+					</meta_data>
+					<meta_data>
+						<meta_data_name>attachment_count</meta_data_name>
+						<attribute_name>attachment_count</attribute_name>
+						<attribute_type>Integer</attribute_type>
+					</meta_data>
+					
+					
+					
+					<!---
+					
+					<meta_data>
+						<meta_data_name>scan_reference</meta_data_name>
+		    			<attribute_name>scanned_document_id</attribute_name>//object name and title
+						<attribute_type>String</attribute_type>
+					</meta_data>
+					<meta_data>
+						<meta_data_name>envelope_id</meta_data_name>
+		    			<attribute_name>scanned_envelope_id</attribute_name>//The folder name where the document should be stored
+						<attribute_type>String</attribute_type>
+					</meta_data>
+				 	<meta_data>
+						<meta_data_name>envelope_order</meta_data_name>
+		    			<attribute_name>envelope_order</attribute_name>
+						<attribute_type>Integer</attribute_type>
+					</meta_data>
+					<meta_data>
+						<meta_data_name>envelope_doc_count</meta_data_name>
+		    			<attribute_name>envelope_doc_count</attribute_name>
+						<attribute_type>Integer</attribute_type>
+					</meta_data>
+					
+					<meta_data>
+						<meta_data_name>delivery_reference</meta_data_name>
+		    			<attribute_name>delivery_reference</attribute_name>
+						<attribute_type>String</attribute_type>
+					</meta_data>
+					<meta_data>
+						<meta_data_name>delivery_type</meta_data_name>
+		    			<attribute_name>delivery_type</attribute_name>
+						<attribute_type>String</attribute_type>
+					</meta_data>
+					<meta_data>
+						<meta_data_name>rescan</meta_data_name>
+						<attribute_name>scanned_rescan</attribute_name>
+						<attribute_type>Boolean</attribute_type>
+					</meta_data> 
+					<meta_data>
+						<meta_data_name>backscan</meta_data_name>
+						<attribute_name>scanned_backfile</attribute_name>
+						<attribute_type>Boolean</attribute_type>
+					</meta_data> 
+					
+					-->
+					
+		    </meta_data_mappings>
+		</import_rules>
+	</dfs_config>
+</dfs_configs>

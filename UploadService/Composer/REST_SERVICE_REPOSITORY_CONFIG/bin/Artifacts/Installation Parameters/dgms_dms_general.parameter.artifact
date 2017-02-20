@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Artifact:Artifact xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Artifact="http://documentum.emc.com/infrastructure/12012007/artifact" xmlns:installparameter="installparameter" urn="urnd:com.emc.ide.aclparameter/dgms_dms_general?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_dms_general.parameter" categoryId="com.emc.ide.aclparameter">
+  <dataModel xsi:type="installparameter:ACLParameter" name="dgms_dms_general" description="DMS General ACL" defaultValue="dgms_dms_general"/>
+  <viewModel xsi:type="Artifact:DefaultArtifactViewModel"/>
+</Artifact:Artifact>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Artifact:Artifact xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Artifact="http://documentum.emc.com/infrastructure/12012007/artifact" xmlns:acl="http://documentum.emc.com/artifact/12012007/acl" xmlns:installparameter="installparameter" urn="urnd:com.emc.ide.artifact.acl/dgms_dms_general?name=dgms_dms_general" categoryId="com.emc.ide.artifact.acl">
+  <dataModel xsi:type="acl:Acl" objectName="dgms_dms_general" description="" aclClass="Public ACL">
+    <objectType href="urnd:com.emc.ide.artifact.dclass/dm_acl?name=dm_acl#//@dataModel"/>
+    <owner xsi:type="installparameter:UserParameter" href="urnd:com.emc.ide.userparameter/DMS?name=DMS#//@dataModel"/>
+    <entries applicationPermit="" accessor="dm_world" isAlias="false">
+      <accessorXPermit/>
+    </entries>
+    <entries accessorPermit="Delete" applicationPermit="" accessor="dm_owner" isAlias="false">
+      <accessorXPermit>
+        <xPermit>Delete Object</xPermit>
+      </accessorXPermit>
+    </entries>
+    <entries accessorPermit="Write" isGroup="true" applicationPermit="" isAlias="false">
+      <accessorXPermit>
+        <xPermit>Execute Procedure</xPermit>
+        <xPermit>Change Location</xPermit>
+      </accessorXPermit>
+      <accessor xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/dgms_manager?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_manager.parameter#//@dataModel"/>
+    </entries>
+    <entries accessorPermit="Write" isGroup="true" applicationPermit="" isAlias="false">
+      <accessorXPermit>
+        <xPermit>Execute Procedure</xPermit>
+        <xPermit>Change Location</xPermit>
+      </accessorXPermit>
+      <accessor xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/dgms_technical?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_technical.parameter#//@dataModel"/>
+    </entries>
+    <entries accessorPermit="Delete" isGroup="true" applicationPermit="" isAlias="false">
+      <accessorXPermit>
+        <xPermit>Execute Procedure</xPermit>
+        <xPermit>Change Location</xPermit>
+      </accessorXPermit>
+      <accessor xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/dgms_system_administrato?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_system_administrato.parameter#//@dataModel"/>
+    </entries>
+    <entries accessorPermit="Write" isGroup="true" applicationPermit="" isAlias="false">
+      <accessorXPermit>
+        <xPermit>Execute Procedure</xPermit>
+        <xPermit>Change Location</xPermit>
+      </accessorXPermit>
+      <accessor xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/dgms_processor?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_processor.parameter#//@dataModel"/>
+    </entries>
+    <entries accessorPermit="Write" isGroup="true" applicationPermit="" isAlias="false">
+      <accessorXPermit>
+        <xPermit>Execute Procedure</xPermit>
+        <xPermit>Change Location</xPermit>
+      </accessorXPermit>
+      <accessor xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/dgms_business_manager?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_business_manager.parameter#//@dataModel"/>
+    </entries>
+    <entries accessorPermit="Write" isGroup="true" applicationPermit="" isAlias="false">
+      <accessorXPermit>
+        <xPermit>Execute Procedure</xPermit>
+        <xPermit>Change Location</xPermit>
+      </accessorXPermit>
+      <accessor xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/dgms_delivery_manager?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_delivery_manager.parameter#//@dataModel"/>
+    </entries>
+    <entries accessorPermit="Write" isGroup="true" applicationPermit="" isAlias="false">
+      <accessorXPermit>
+        <xPermit>Execute Procedure</xPermit>
+        <xPermit>Change Location</xPermit>
+      </accessorXPermit>
+      <accessor xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/dgms_directorate?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/dgms_directorate.parameter#//@dataModel"/>
+    </entries>
+    <entries accessorPermit="Relate" isGroup="true" applicationPermit="" isAlias="false">
+      <accessorXPermit>
+        <xPermit>Execute Procedure</xPermit>
+        <xPermit>Change Location</xPermit>
+      </accessorXPermit>
+      <accessor xsi:type="installparameter:GroupParameter" href="urnd:com.emc.ide.groupparameter/cps_all?artifactURI=file:/E:/WM_DMS/REST_SERVICE_REPOSITORY_CONFIG/Artifacts/Installation%20Parameters/cps_all.parameter#//@dataModel"/>
+    </entries>
+    <relativeAliases xsi:type="acl:InternalAccessor" name="dm_world"/>
+    <relativeAliases xsi:type="acl:InternalAccessor" name="dm_owner"/>
+  </dataModel>
+  <viewModel xsi:type="Artifact:DefaultArtifactViewModel"/>
+</Artifact:Artifact>
