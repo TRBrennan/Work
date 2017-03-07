@@ -1,0 +1,169 @@
+package test2;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class wordladder {
+
+    private final HashSet<String> dic= new HashSet<>();
+    private final List<Node> solutionNode= new LinkedList<>();
+    private final HashSet<Node> visitedNodes= new HashSet<>();
+    private final String in;
+    private final String target;
+
+    public wordladder(String i, String t){
+        in=i;
+        target= t;
+    }
+
+    public static void main(String[] args) throws IOException {
+    	String start = "";
+    	String end = "";
+    	wordladder wl= new wordladder(start,end);
+        
+
+        wl.loadDictionary();
+        if(!wl.dic.contains(wl.in)||!wl.dic.contains(wl.target)){
+            System.out.println("error words not in Dictionary");
+        }
+
+        wl.solutionNode.add(new Node(wl.in));
+
+        wl.getPaths();
+    }
+
+    private void getPaths(){
+        long st= System.currentTimeMillis();
+        while(!isMatchFound()){
+            Node n= selectNext();
+            solutionNode.remove(n);
+
+            addNextWordsToQ(n);
+
+            visitedNodes.add(n);
+        }
+
+        System.out.println("Solution Node- \n"+solutionNode);
+        System.out.println("visitedNodes- \n"+visitedNodes);
+
+        long end= System.currentTimeMillis();
+        System.out.println("time taken in sec~ "+ (end-st)/1000);
+        System.out.println("time taken in min~ "+ (end-st)/60000);
+    }
+
+    private Node selectNext(){
+        Node sel= null;
+        int minMatch=-1;
+        int match;
+
+        for(Node n: solutionNode){
+            match=0;
+            for(int i=0; i<target.length(); i++){
+                if(n.str.charAt(i)== target.charAt(i)) {
+                    match++;
+                }
+            }
+            if(match>minMatch){
+                sel=n;
+                minMatch=match;
+            }
+        }
+//      System.out.println(sel.str+" "+minMatch);
+        return sel;
+    }
+
+    //Add next possible combinations to the nodeQ
+    private void addNextWordsToQ(Node n){
+        String s= n.str;
+        for(int i=0;i<s.length();i++){
+            String regex= s.substring(0,i)+"."+s.substring(i+1);
+            Pattern p= Pattern.compile(regex);
+            for(String d: dic){
+                Matcher m= p.matcher(d);
+                if(!d.equals(s) && s.length()==d.length() 
+                        && m.find() && !isNodeVisited(d)){
+                    solutionNode.add(new Node(d,n));
+                }
+            }
+        }
+    }
+
+    //Check nodeQ to see if word ladder is solved
+    private boolean isMatchFound(){
+        for(Node n: solutionNode){
+            if(target.equals(n.str)){
+                System.out.println(n);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean isNodeVisited(String add){
+        for(Node n: visitedNodes){
+            if(n.str.equals(add)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //Import the Dictionary File to check for words that are useable.
+    private void loadDictionary() throws IOException{
+    	File file = new File("websters-dictionary.txt");
+    	Scanner sc = new Scanner(file);     	
+    	while (sc.hasNext()) {
+    		dic.add(sc.next());
+    	}
+    	
+    }
+}
+
+class Node{
+     String str;
+     final List<String> path= new ArrayList<>();
+
+    public Node(String str){
+        this.str=str;
+    }
+
+    public Node(String str, Node parent){
+        this.str=str;
+        path.addAll(parent.path);
+        path.add(parent.str);
+    }
+
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((str == null) ? 0 : str.hashCode());
+        return result;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Node other = (Node) obj;
+        if (str == null) {
+            if (other.str != null)
+                return false;
+        } else if (!str.equals(other.str))
+            return false;
+        return true;
+    }
+
+    public String toString() {
+        return "\n" + str + ", " + path+ "";
+    }
+}
